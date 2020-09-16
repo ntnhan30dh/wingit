@@ -1,10 +1,15 @@
 .storyContainer {
   width: 100%;
+  background-color: #ffd250;
+  .waveDiv{
+    width: 100%;
+  }
   .bgContainer {
     height: 815px;
     width: 100%;
     background-image: url(../images/bgBig.png);
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +21,26 @@
         width: 100%;
       }
     }
+  .before {  
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ffd250 13px);
+    }
+  
+  .after {
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 13px);
+    }
+  }
+  .before,
+ .after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
   }
   .storyDiv {
     display: flex;
@@ -23,6 +48,13 @@
     justify-content: space-around;
     height: 528px;
     background-color: #ffd250;
+    &::before {
+      background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+    }
+  
+    &::after {  
+      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+    }
     .textDiv {
       width: 1440px;
       height: 528px;

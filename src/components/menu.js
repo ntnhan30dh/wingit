@@ -14,8 +14,8 @@ import dips from '../images/dipsText.png'
 
 const Menu = () => {
   return (
-    <div className="menuContainer">
-      <div className="textTopDiv row">
+    <div className="menuContainer ">
+      <div className="textTopDiv row ">
         <div className="chickenWingDiv">
           <img src={chickenWing} alt="chicken wing" />
         </div>

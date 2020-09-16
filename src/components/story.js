@@ -4,13 +4,15 @@ import chikenBox from '../images/chicken_box.png'
 
 const Story = () => {
   return (
-    <div className="storyContainer">
-      <div className="bgContainer">
+    <div className="storyContainer ">
+      <div className="bgContainer wave wave--top">
+        <span className="before"></span>
+        <span className="after"></span>
         <div className="stickerDiv">
           <img src={sticker} alt="sticker" />
         </div>
       </div>
-      <div className="storyDiv">
+      <div className="storyDiv wave">
         <div className="textDiv">
           <p className="text1">
             Nothing fits a night in with friends better than some succulent
