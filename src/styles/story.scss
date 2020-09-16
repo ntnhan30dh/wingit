@@ -1,0 +1,44 @@
+.storyContainer {
+  width: 100%;
+  .bgContainer {
+    height: 815px;
+    width: 100%;
+    background-image: url(../images/bgBig.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .stickerDiv {
+      width: 406px;
+      height: 406px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .storyDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 528px;
+    background-color: #ffd250;
+    .textDiv {
+      width: 1440px;
+      height: 528px;
+      width: 659px;
+      height: 428px;
+      font-family: Montserrat;
+      font-size: 24px;
+      line-height: 1.42;
+      letter-spacing: 0.53px;
+      color: #000000;
+      .text1 {
+        font-size: 34px;
+        font-weight: 800;
+        letter-spacing: 0.75px;
+      }
+    }
+    .chickenBoxDiv{}
+  }
+}
