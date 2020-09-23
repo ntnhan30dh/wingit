@@ -1,6 +1,6 @@
 import React from "react"
 import sticker from "../images/Sticker.png"
-import chikenBox from '../images/chicken_box.png'
+import chikenBox from "../images/chicken_box.png"
 
 const Story = () => {
   return (
@@ -13,6 +13,7 @@ const Story = () => {
         </div>
       </div>
       <div className="storyDiv wave">
+        <span id="story" name="story"></span>
         <div className="textDiv">
           <p className="text1">
             Nothing fits a night in with friends better than some succulent
@@ -24,9 +25,9 @@ const Story = () => {
             delivered right to your movie night.
           </p>
         </div>
-      <div className="chickenBoxDiv">
-          <img src={chikenBox} alt=""/>
-      </div>
+        <div className="chickenBoxDiv">
+          <img src={chikenBox} alt="" />
+        </div>
       </div>
     </div>
   )

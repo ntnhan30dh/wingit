@@ -1,4 +1,5 @@
 .storyContainer {
+  margin-top: 170px;
   width: 100%;
   background-color: #ffd250;
   .waveDiv{
@@ -43,6 +44,7 @@
   background-repeat: repeat-x;
   }
   .storyDiv {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -54,6 +56,9 @@
   
     &::after {  
       background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+    }
+    span{
+      position:absolute; top:-180px;
     }
     .textDiv {
       width: 1440px;
@@ -71,6 +76,5 @@
         letter-spacing: 0.75px;
       }
     }
-    .chickenBoxDiv{}
   }
 }

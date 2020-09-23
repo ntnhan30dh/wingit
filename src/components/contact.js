@@ -3,9 +3,11 @@ import logo from '../images/PedidosYa-logo.png'
 const Contact = () => {
     return (
        <div className="contactContainer">
-           <h2>
+       <span  id="contact" ></span>
+           <div className="text wave wave--top">
            hello@getwingit.com 
-           </h2>
+           </div>
+          
            <div className="logoDiv">
                <img src={logo} alt="logo"/>
            </div>

@@ -6,18 +6,21 @@ import chickenWing from "../images/chicken-wing.png"
 import chickenLeg from "../images/chicken-leg.png"
 import chickenDish from "../images/chicken-dish.png"
 import fries from "../images/fries.png"
-import bgSmall from "../images/bgSmall.png"
 import chickenBoxIcon from "../images/chicken-box_icon.png"
-import mains from '../images/mainsText.png'
-import sides from '../images/sidesText.png'
-import dips from '../images/dipsText.png'
+import mains from "../images/mainsText.png"
+import sides from "../images/sidesText.png"
+import dips from "../images/dipsText.png"
+import dip from "../images/dip.png"
 
 const Menu = () => {
   return (
-    <div className="menuContainer ">
+    <div className="menuContainer">
+    <span id="menu"  name="menu"></span>
       <div className="textTopDiv row ">
         <div className="chickenWingDiv">
-          <img src={chickenWing} alt="chicken wing" />
+          <div className="chickenWingImgDiv">
+            <img src={chickenWing} alt="chicken wing" />
+          </div>
         </div>
         <div className="text">
           <h1>MENU</h1>
@@ -26,23 +29,26 @@ const Menu = () => {
             Check out our yummy fried chicken served with tongue-tingling
             sauces.
           </p>
-          <div className="oderButton">ORDER NOW</div>
+          <button>ORDER NOW</button>
         </div>
         <div className="chickenLegDiv">
-          <img src={chickenLeg} alt="chicken leg" />
+          <div className="chickenLegImgDiv">
+            <img src={chickenLeg} alt="chicken leg" />
+          </div>
         </div>
       </div>
       <div className="mainDiv row">
-        <div className="mainPicDiv">
+        <div className="">
           <img src={mainPic} alt="main menu" />
         </div>
+        <div className="mainTextDiv"></div>
         <div className="mainText">
           <div className="chickenDishDiv">
             <img src={chickenDish} alt="chicken Dish" />
           </div>
-        <div className="mainsPicDiv">
-          <img src={mains} alt="mains"/>
-        </div>
+          <div className="">
+            <img src={mains} alt="mains" />
+          </div>
           <p>
             Chicken wings <br />
             Tenders <br />
@@ -51,14 +57,14 @@ const Menu = () => {
           </p>
         </div>
       </div>
-      <div className="sidesDiv row">
+      <div className="mainDiv row">
         <div className="mainText">
-          <div className="chickenFriesDiv">
-            <img src={fries} alt="chicken fries" />
+          <div className="friesDiv">
+            <img src={fries} alt=" fries" />
           </div>
           <div className="mainsPicDiv">
-          <img src={sides} alt="sides"/>
-        </div>
+            <img src={sides} alt="sides" />
+          </div>
           <p>
             Criss cross potato <br />
             Onion rings <br />
@@ -69,21 +75,21 @@ const Menu = () => {
             Coleslaw <br />
           </p>
         </div>
-        <div className="sidesPicDiv">
+        <div className="">
           <img src={sidesPic} alt="sides menu" />
         </div>
       </div>
-      <div className="sidesDiv row">
-        <div className="sidesPicDiv">
-          <img src={dipPic} alt="sides menu" />
+      <div className="mainDiv row">
+        <div className="">
+          <img src={dipPic} alt="dips menu" />
         </div>
         <div className="mainText">
-          <div className="chickenFriesDiv">
-            <img src={fries} alt="chicken fries" />
+          <div className="dipDiv">
+            <img src={dip} alt="dip" />
           </div>
           <div className="mainsPicDiv">
-          <img src={dips} alt="dips"/>
-        </div>
+            <img src={dips} alt="dips" />
+          </div>
           <p>
             Black Pepper <br />
             Garlic <br />
@@ -100,14 +106,13 @@ const Menu = () => {
           Make your fried chicken dreams come true. Pick your favourite dish and
           enjoy!
         </p>
-        <div className="oderButton">ORDER NOW</div>
+        <button>ORDER NOW</button>
+      </div>
+      <div className="bgSmallDiv">
         <div className="chickenBoxIconDiv">
           <img src={chickenBoxIcon} alt="chicken box icon" />
         </div>
-      </div>
-      <div className="bgSmallDiv">
-        <img src={bgSmall} alt="bg small" />
-      </div>
+\      </div>
     </div>
   )
 }

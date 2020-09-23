@@ -1,18 +1,155 @@
 .menuContainer {
-  .mainText {
-    width: 362px;
-    height: 333px;
-    background-color: #ffd250;
-  p {
-      width: 288px;
-      height: 198px;
+  position: relative;
+  span{
+    position:absolute; top:-180px;
+  }
+  .textTopDiv {
+    padding: 5% 0;
+    .chickenWingDiv {
+      width: 33%;
+      position: relative;
+      .chickenWingImgDiv {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+      }
+    }
+    .chickenLegDiv {
+      width: 33%;
+      position: relative;
+      .chickenLegImgDiv {
+        position: absolute;
+        top: 10%;
+        left: 40%;
+      }
+    }
+    .text {
+      width: 33%;
+      text-align: center;
+      h1 {
+        font-family: Montserrat;
+        font-size: 54px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-align: center;
+        color: #000000;
+      }
+      h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: 0.53px;
+        text-align: center;
+        color: #000000;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.62px;
+        width: 560px;
+      }
+      p {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: 0.53px;
+        text-align: center;
+        color: #000000;
+      }
+      button {
+        width: 224px;
+        height: 67px;
+        background-color: #000000;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.55;
+        letter-spacing: 1.16px;
+        text-align: center;
+        color: #ffd250;
+        margin: 5% 0;
+      }
+    }
+  }
+  .mainDiv {
+    margin-bottom: 5%;
+    justify-content: center;
+    .mainText {
+      padding-top: 40px;
+      padding-bottom: 10px;
+      margin-top: 4%;
+      width: 362px;
+      height: fit-content;
+      background-color: #ffd250;
+      text-align: center;
+      p {
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.82;
+        letter-spacing: 0.48px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+    .chickenDishDiv {
+      margin-left: 80%;
+      margin-top: -30%;
+    }
+    .dipDiv {
+      margin-left: 80%;
+      margin-top: -25%;
+    }
+    .friesDiv {
+      margin-left: -90%;
+      margin-top: -25%;
+    }
+  }
+  .textBottomDiv {
+    text-align: center;
+    // width: 100%;
+      p {
+        margin: 0 25%;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.14;
+        letter-spacing: 0.62px;
+        text-align: center;
+        color: #000000;
+      }
+    
+    button {
+      width: 224px;
+      height: 67px;
+      background-color: #000000;
       font-family: Montserrat;
       font-size: 22px;
-      font-weight: 600;
-      line-height: 1.82;
-      letter-spacing: 0.48px;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.55;
+      letter-spacing: 1.16px;
       text-align: center;
-      color: #000000;
+      color: #ffd250;
+      border-style: none;
+      margin: 3%;
     }
+  }
+  .bgSmallDiv{
+    width: 100%;
+    height: 352px;
+   background-image: url(../images/bgSmall.png);
+   background-size: cover;
+   background-position: center;
   }
 }

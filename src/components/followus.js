@@ -3,11 +3,12 @@ import moped from '../images/moped.png'
 import followUs from '../images/followUsText.png'
 const FollowUs = () => {
     return (
-       <div className="followUsContainer">
+       <div className="followUsContainer" >
+       <span id="follow" ></span>
        <div className="followUSPicDiv">
           <img src={followUs} alt="follow us"/>
         </div>
-           <div className="mopedDiv">
+           <div className="mopedDiv" >
                <img src={moped} alt="moped"/>
            </div>
        </div>
