@@ -11,6 +11,8 @@ const Header = () => {
       </div>
       <div className="rightDiv row">
         <ul>
+          <li></li>
+          <li></li>
           <li>
             <Link to="#story">Our Story</Link>
           </li>
