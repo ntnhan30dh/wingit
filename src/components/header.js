@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 
 const Header = () => {
   return (
-    <nav className="nav ">
-      <div className="img_div">
+    <nav className="nav">
+      <Link to="#" className="img_div">
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
       <div className="rightDiv row">
         <ul>
           <li></li>

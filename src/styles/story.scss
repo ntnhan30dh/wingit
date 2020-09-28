@@ -2,6 +2,9 @@
   margin-top: 160px;
   width: 100%;
   background-color: #ffd250;
+  @media screen and (max-width: $break-large) {
+    margin-top: 120px;
+  }
   .waveDiv{
     width: 100%;
   }
@@ -15,9 +18,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: $break-large) {
+      height: 522px;
+    }
     .stickerDiv {
       width: 406px;
       height: 406px;
+      @media screen and (max-width: $break-large) {
+        width: 273px;
+        height: 273px;
+      }
       img {
         width: 100%;
       }
@@ -50,6 +60,10 @@
     justify-content: space-around;
     height: 528px;
     background-color: #ffd250;
+    @media screen and (max-width: $break-large) {
+      flex-direction: column;
+      padding-top: 10%;
+    }
     &::before {
       background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
     }
@@ -61,8 +75,6 @@
       position:absolute; top:-180px;
     }
     .textDiv {
-      width: 1440px;
-      height: 528px;
       width: 659px;
       height: 428px;
       font-family: Montserrat;
@@ -70,10 +82,30 @@
       line-height: 1.42;
       letter-spacing: 0.53px;
       color: #000000;
+      @media screen and (max-width: $break-large) {
+        width: 607px;
+        // height: 300px;
+        font-size: 16.8px;
+        letter-spacing: 0.37px;
+        padding-bottom: 5%;
+      }
       .text1 {
         font-size: 34px;
         font-weight: 800;
         letter-spacing: 0.75px;
+        @media screen and (max-width: $break-large) {
+          font-size: 23.8px;
+          letter-spacing: 0.52px;
+        }
+      }
+    }
+    .chickenBoxDiv{
+      @media screen and (max-width: $break-large) {
+       width: 350px;
+       z-index: 9;
+       img{
+         width: 100%;
+       }
       }
     }
   }

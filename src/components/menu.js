@@ -38,14 +38,12 @@ const Menu = () => {
         </div>
       </div>
       <div className="mainDiv row">
-        <div className="">
+        <div className="mainDivImgContainer">
           <img src={mainPic} alt="main menu" />
         </div>
-        <div className="mainTextDiv"></div>
+        {/* <div className="mainTextDiv"></div> */}
         <div className="mainText">
-          <div className="chickenDishDiv">
-            <img src={chickenDish} alt="chicken Dish" />
-          </div>
+          <div className="textContainer">
           <div className="">
             <img src={mains} alt="mains" />
           </div>
@@ -55,13 +53,18 @@ const Menu = () => {
             Popcorn chicken <br />
             Drumsticks <br />
           </p>
+          </div>
+          <div className="chickenDishDiv">
+            <img src={chickenDish} alt="chicken Dish" />
+          </div>
         </div>
       </div>
-      <div className="mainDiv row">
+      <div className="mainDiv reverse row">
         <div className="mainText">
           <div className="friesDiv">
             <img src={fries} alt=" fries" />
           </div>
+          <div className="textContainer reverse">
           <div className="mainsPicDiv">
             <img src={sides} alt="sides" />
           </div>
@@ -74,19 +77,18 @@ const Menu = () => {
             Sweet potato fries <br />
             Coleslaw <br />
           </p>
+          </div>
         </div>
-        <div className="">
+        <div className="mainDivImgContainer">
           <img src={sidesPic} alt="sides menu" />
         </div>
       </div>
       <div className="mainDiv row">
-        <div className="">
+        <div className="mainDivImgContainer">
           <img src={dipPic} alt="dips menu" />
         </div>
         <div className="mainText">
-          <div className="dipDiv">
-            <img src={dip} alt="dip" />
-          </div>
+          <div className="textContainer">
           <div className="mainsPicDiv">
             <img src={dips} alt="dips" />
           </div>
@@ -99,6 +101,10 @@ const Menu = () => {
             Cheddar
             <br />
           </p>
+          </div>
+          <div className="dipDiv">
+            <img src={dip} alt="dip" />
+          </div>
         </div>
       </div>
       <div className="textBottomDiv">

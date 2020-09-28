@@ -5,39 +5,59 @@
   background-color: #ffd250;
   text-align: center;
   padding: 5% 10%;
-  .top{
+  .top {
     display: flex;
     position: relative;
-
-    & > div {width: 33.3%;
+    .followUSPicDiv {
+      padding:0 1%;
+      img {
+        width: 100%;
+      }
     }
 
-    .icons{
+    & > div {
+      width: 33.3%;
+    }
+
+    .icons {
       display: flex;
       width: 100%;
-     justify-content: center;
-     & > div{
-       padding: 10% 5%;
-     }
+      justify-content: center;
+      & > div {
+        margin: 10% 5%;
+        width: 55px;
+        height: 55px;
+        img {
+          width: 100%;
+        }
+      }
     }
-       .mopedDiv{
-         position: absolute;
-         right: -20px;
-         text-align: right;
-         top: 50px;
-       }
+    .mopedDiv {
+      position: absolute;
+      right: -20px;
+      text-align: right;
+      top: 20px;
+      width: 150px;
+      @media screen and (max-width: $break-large) {
+        width: 120px;
+      }
+      img {
+        width: 100%;
+      }
+    }
   }
-  .bottom{
+  .bottom {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    // padding-bottom: 10%;
     & > div {
-      // width: 33.3%;
-      width: 363px;
-  height: 363px;
-  background-color: #ffffff;
-
+       width: 30%;
+      background-color: #ffffff;
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
     }
   }
   span {
