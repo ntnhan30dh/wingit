@@ -4,6 +4,8 @@ import Story from "../components/story"
 import Menu from "../components/menu"
 import FollowUs from "../components/followus"
 import Contact from "../components/contact"
+import 'semantic-ui-css/semantic.min.css'
+
 import "../styles/index.scss"
 
 export default function Home() {

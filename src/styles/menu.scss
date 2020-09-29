@@ -93,6 +93,16 @@
         text-align: center;
         color: #ffd250;
         margin: 5% 0;
+        text-transform: uppercase;
+        padding: 0;
+        border-radius: 0;
+        &:hover {
+          background-color: transparent;
+          background-image: none;
+          box-shadow: 0 0 0 1px transparent inset,
+            0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+          color: #000000;
+        }
         @media screen and (max-width: $break-large) {
           width: 179px;
           height: 54px;
@@ -172,12 +182,12 @@
 
     .friesDiv {
       position: absolute;
-      top:-50px;
+      top: -50px;
       left: -30px;
 
       @media screen and (max-width: $break-large) {
         position: absolute;
-        top:250px;
+        top: 250px;
       }
     }
     .dipDiv {
@@ -228,6 +238,16 @@
       color: #ffd250;
       border-style: none;
       margin: 3%;
+      text-transform: uppercase;
+      padding: 0;
+      border-radius: 0;
+      &:hover {
+        background-color: transparent;
+        background-image: none;
+        box-shadow: 0 0 0 1px transparent inset,
+          0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+        color: #000000;
+      }
     }
   }
   .bgSmallDiv {
@@ -240,10 +260,9 @@
     @media screen and (max-width: $break-large) {
       height: 240.2px;
       margin-top: 100px;
-
-    } 
+    }
   }
-  .chickenBoxIconDiv{
+  .chickenBoxIconDiv {
     position: absolute;
     top: -100px;
     left: 170px;

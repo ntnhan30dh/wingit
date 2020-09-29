@@ -1,4 +1,5 @@
 import React from "react"
+import OrderNow from './ordernow'
 import mainPic from "../images/mains-pic.png"
 import sidesPic from "../images/sides-pic.png"
 import dipPic from "../images/dip-pic.png"
@@ -29,7 +30,7 @@ const Menu = () => {
             Check out our yummy fried chicken served with tongue-tingling
             sauces.
           </p>
-          <button>ORDER NOW</button>
+          <OrderNow/>
         </div>
         <div className="chickenLegDiv">
           <div className="chickenLegImgDiv">
@@ -112,7 +113,7 @@ const Menu = () => {
           Make your fried chicken dreams come true. Pick your favourite dish and
           enjoy!
         </p>
-        <button>ORDER NOW</button>
+        <OrderNow/>
       </div>
       <div className="bgSmallDiv">
         <div className="chickenBoxIconDiv">

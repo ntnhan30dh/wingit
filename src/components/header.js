@@ -1,6 +1,6 @@
 import React from "react"
 import logo from "../images/WingIt_Logo.png"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
+import OrderNow from './ordernow'
 import { Link } from "gatsby"
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
             {/* <AnchorLink to="#story" title="Our Story" /> */}
           </li>
         </ul>
-        <button>Oder Now</button>
+        <OrderNow/>
       </div>
     </nav>
   )
