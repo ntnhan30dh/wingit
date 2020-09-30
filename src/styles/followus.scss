@@ -41,6 +41,9 @@
       @media screen and (max-width: $break-large) {
         width: 120px;
       }
+      @media screen and (max-width: $phone) {
+        display: none;
+      }
       img {
         width: 100%;
       }

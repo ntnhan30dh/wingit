@@ -5,6 +5,9 @@
   @media screen and (max-width: $break-large) {
     margin-top: 120px;
   }
+  @media screen and (max-width: $phone) {
+    margin-top: 0;
+  }
   .waveDiv{
     width: 100%;
   }
@@ -22,12 +25,22 @@
     @media screen and (max-width: $break-large) {
       height: 522px;
     }
+
+    @media screen and (max-width: $phone) {
+      height: 322px;
+    }
+    
     .stickerDiv {
       width: 406px;
       height: 406px;
       @media screen and (max-width: $break-large) {
         width: 273px;
         height: 273px;
+      }
+
+      @media screen and (max-width: $phone) {
+        width: 150px;
+        height: 150px;
       }
       img {
         width: 100%;
@@ -85,10 +98,16 @@
       color: #000000;
       @media screen and (max-width: $break-large) {
         width: 607px;
-        // height: 300px;
+        height: 522px;
         font-size: 16.8px;
         letter-spacing: 0.37px;
         padding-bottom: 5%;
+      }
+      @media screen and (max-width: $phone) {
+        width: 100%;
+        font-size: 14px;
+        padding: 0 5%;
+
       }
       .text1 {
         font-size: 34px;
@@ -98,16 +117,23 @@
           font-size: 23.8px;
           letter-spacing: 0.52px;
         }
+        @media screen and (max-width: $phone) {
+          font-size: 20px;
+        }
       }
     }
     .chickenBoxDiv{
+      img{
+        width: 100%;
+      }
       @media screen and (max-width: $break-large) {
        width: 350px;
        z-index: 9;
-       img{
-         width: 100%;
-       }
       }
+
+      @media screen and (max-width: $phone) {
+        width: 250px;
+       }
     }
   }
 }

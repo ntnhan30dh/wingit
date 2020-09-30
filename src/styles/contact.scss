@@ -28,9 +28,19 @@
     @media screen and (max-width: $break-large) {
       padding-top: 70px;
     }
+    @media screen and (max-width: $phone) {
+      font-size: 20px;
+    }
   }
   .logoDiv{
     padding: 0 1%;
+    @media screen and (max-width: $phone) {
+      width: 50%;
+      margin: 0 auto;
+          img {
+            width: 100%;
+          }
+    }
   }
   .wave--top::before {
     background-image: radial-gradient(
