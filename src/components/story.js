@@ -2,7 +2,23 @@ import React from "react"
 import sticker from "../images/Sticker.png"
 import chikenBox from "../images/chicken_box.png"
 
+import Plx from "react-plx"
+
+
 const Story = () => {
+  const parallaxData = [
+    {
+      start:'self',
+      duration: 500,
+      properties: [
+        {
+          startValue: 0.5,
+          endValue: 1,
+          property: "scale"
+        },
+      ],
+    },
+  ];
   return (
     <div className="storyContainer ">
       <div className="bgContainer wave wave--top">
@@ -25,9 +41,9 @@ const Story = () => {
             delivered right to your movie night.
           </p>
         </div>
-        <div className="chickenBoxDiv">
+        <Plx parallaxData={parallaxData} className="chickenBoxDiv">
           <img src={chikenBox} alt="" />
-        </div>
+        </Plx>
       </div>
     </div>
   )

@@ -1,4 +1,6 @@
 import React from "react"
+import Plx from "react-plx"
+
 import OrderNow from './ordernow'
 import mainPic from "../images/mains-pic.png"
 import sidesPic from "../images/sides-pic.png"
@@ -14,6 +16,33 @@ import dips from "../images/dipsText.png"
 import dip from "../images/dip.png"
 
 const Menu = () => {
+  const parallaxRotate = [
+    {
+      start:'self',
+      duration: 1000,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 180,
+          property: "rotate"
+        },
+      ],
+    },
+  ];
+
+  // const parallaxMoveUp = [
+  //   {
+  //     start:'self',
+  //     duration: 1000,
+  //     properties: [
+  //       {
+  //       startValue: 0,
+  //       endValue: -300,
+  //       property: "translateY"
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <div className="menuContainer">
     <span id="menu"  name="menu"></span>
@@ -42,8 +71,7 @@ const Menu = () => {
         <div className="mainDivImgContainer">
           <img src={mainPic} alt="main menu" />
         </div>
-        {/* <div className="mainTextDiv"></div> */}
-        <div className="mainText">
+        <div   className="mainText">
           <div className="textContainer">
           <div className="">
             <img src={mains} alt="mains" />
@@ -55,9 +83,9 @@ const Menu = () => {
             Drumsticks <br />
           </p>
           </div>
-          <div className="chickenDishDiv">
+          <Plx parallaxData={parallaxRotate} className="chickenDishDiv">
             <img src={chickenDish} alt="chicken Dish" />
-          </div>
+          </Plx>
         </div>
       </div>
       <div className="mainDiv reverse row">

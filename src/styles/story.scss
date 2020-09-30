@@ -11,7 +11,8 @@
   .bgContainer {
     height: 815px;
     width: 100%;
-    background-image: url(../images/bgBig.png);
+    // background-image: url(../images/bgBig.png);
+    background-image: url(../images/bgBig-1.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -41,7 +42,7 @@
   .after {
     height: 15px;
     background-size: 40px 20px;
-    background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 13px);
+    background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 12px);
     }
   }
   .before,
@@ -65,11 +66,11 @@
       padding-top: 10%;
     }
     &::before {
-      background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+      background-image: radial-gradient(circle at 10px -5px, transparent 13px, white 13px);
     }
   
     &::after {  
-      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 12px);
     }
     span{
       position:absolute; top:-180px;

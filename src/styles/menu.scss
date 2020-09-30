@@ -120,7 +120,7 @@
       flex-direction: column;
       align-items: center;
       padding: 0 10%;
-      margin: 0 0 5% 0;
+      margin: 0 0 10% 0;
     }
     .mainDivImgContainer {
       img {
@@ -133,7 +133,7 @@
     }
     .mainText {
       padding-top: 40px;
-      padding-bottom: 10px;
+      padding-bottom: 30px;
       margin-top: 4%;
       width: 362px;
       height: fit-content;
@@ -144,7 +144,7 @@
       @media screen and (max-width: $break-large) {
         width: 100%;
         margin-top: 0;
-        padding-top: 0;
+        padding-top: 30px;
       }
       .textContainer {
         @media screen and (max-width: $break-large) {
@@ -187,7 +187,7 @@
 
       @media screen and (max-width: $break-large) {
         position: absolute;
-        top: 250px;
+        top: 270px;
       }
     }
     .dipDiv {
@@ -196,7 +196,7 @@
       right: -60px;
       @media screen and (max-width: $break-large) {
         position: absolute;
-        top: 240px;
+        top: 250px;
       }
     }
   }

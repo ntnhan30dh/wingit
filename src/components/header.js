@@ -3,10 +3,12 @@ import logo from "../images/WingIt_Logo.png"
 import OrderNow from './ordernow'
 import { Link } from "gatsby"
 
+
 const Header = () => {
+ 
   return (
     <nav className="nav">
-      <Link to="#" className="img_div">
+      <Link  to="#" className="img_div">
         <img src={logo} alt="logo" />
       </Link>
       <div className="rightDiv row">

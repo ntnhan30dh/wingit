@@ -1,9 +1,28 @@
 import React from "react"
+import Plx from "react-plx"
+
+
 import moped from "../images/moped.png"
 import followUs from "../images/followUsText.png"
 import facebook from "../images/facebook.png"
 import instagram from "../images/instagram.png"
+
 const FollowUs = () => {
+
+  const parallaxMoveRight = [
+    {
+      start:'self',
+      duration: 1000,
+      properties: [
+        {
+        startValue: -100,
+        endValue: 0,
+        property: "translateX"
+        },
+      ],
+    },
+  ];
+  
   return (
     <div className="followUsContainer">
       <span id="follow"></span>
@@ -22,9 +41,9 @@ const FollowUs = () => {
             </div>
           </div>
         </div>
-        <div className="mopedDiv">
+        <Plx parallaxData={parallaxMoveRight} className="mopedDiv">
           <img src={moped} alt="moped" />
-        </div>
+        </Plx>
       </div>
       <div className="bottom">
         <div className="pic"></div>
