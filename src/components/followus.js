@@ -6,6 +6,9 @@ import moped from "../images/moped.png"
 import followUs from "../images/followUsText.png"
 import facebook from "../images/facebook.png"
 import instagram from "../images/instagram.png"
+import soMe1 from "../images/WingIt_SoMe_1.png"
+import soMe2 from "../images/WingIt_SoMe_2.png"
+import soMe3 from "../images/WingIt_SoMe_3.png"
 
 const FollowUs = () => {
 
@@ -46,9 +49,11 @@ const FollowUs = () => {
         </Plx>
       </div>
       <div className="bottom">
-        <div className="pic"></div>
-        <div className="pic"></div>
-        <div className="pic"></div>
+        <div className="pic">
+          <img src={soMe1} alt="Wing It_SoMe_1"/>
+        </div>
+        <div className="pic"><img src={soMe2} alt="Wing It_SoMe_2"/></div>
+        <div className="pic"><img src={soMe3} alt="Wing It_SoMe_3"/></div>
       </div>
     </div>
   )

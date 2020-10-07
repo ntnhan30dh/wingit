@@ -30,27 +30,41 @@ const Menu = () => {
     },
   ];
 
-  // const parallaxMoveUp = [
-  //   {
-  //     start:'self',
-  //     duration: 1000,
-  //     properties: [
-  //       {
-  //       startValue: 0,
-  //       endValue: -300,
-  //       property: "translateY"
-  //       },
-  //     ],
-  //   },
-  // ];
+  const parallaxScaleUp = [
+    {
+      start:'self',
+      duration: 500,
+      properties: [
+        {
+        startValue: 0,
+        endValue: 1,
+        property: "scale"
+        },
+      ],
+    },
+  ];
+
+  const parallaxMoveUp = [
+    {
+      start:'self',
+      duration: 500,
+      properties: [
+        {
+          startValue: 100,
+          endValue: 0,
+          property: "translateY"
+        },
+      ],
+    },
+  ];
   return (
     <div className="menuContainer">
     <span id="menu"  name="menu"></span>
       <div className="textTopDiv row ">
         <div className="chickenWingDiv">
-          <div className="chickenWingImgDiv">
+          <Plx parallaxData={parallaxScaleUp} className="chickenWingImgDiv">
             <img src={chickenWing} alt="chicken wing" />
-          </div>
+          </Plx>
         </div>
         <div className="text">
           <h1>MENU</h1>
@@ -62,9 +76,9 @@ const Menu = () => {
           <OrderNow/>
         </div>
         <div className="chickenLegDiv">
-          <div className="chickenLegImgDiv">
+          <Plx parallaxData={parallaxScaleUp} className="chickenLegImgDiv">
             <img src={chickenLeg} alt="chicken leg" />
-          </div>
+          </Plx>
         </div>
       </div>
       <div className="mainDiv row">
@@ -90,9 +104,9 @@ const Menu = () => {
       </div>
       <div className="mainDiv reverse row">
         <div className="mainText">
-          <div className="friesDiv">
+          <Plx parallaxData={parallaxScaleUp} className="friesDiv">
             <img src={fries} alt=" fries" />
-          </div>
+          </Plx>
           <div className="textContainer reverse">
           <div className="mainsPicDiv">
             <img src={sides} alt="sides" />
@@ -131,9 +145,9 @@ const Menu = () => {
             <br />
           </p>
           </div>
-          <div className="dipDiv">
+          <Plx parallaxData={parallaxScaleUp} className="dipDiv">
             <img src={dip} alt="dip" />
-          </div>
+          </Plx>
         </div>
       </div>
       <div className="textBottomDiv">
@@ -144,9 +158,9 @@ const Menu = () => {
         <OrderNow/>
       </div>
       <div className="bgSmallDiv">
-        <div className="chickenBoxIconDiv">
+        <Plx parallaxData={parallaxMoveUp} className="chickenBoxIconDiv">
           <img src={chickenBoxIcon} alt="chicken box icon" />
-        </div>
+        </Plx>
 \      </div>
     </div>
   )

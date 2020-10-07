@@ -2,13 +2,37 @@
   margin-top: 160px;
   width: 100%;
   background-color: #ffd250;
+  position: relative;
+
+  &:after {
+    width: 100%;
+    // background: url(../images/wave-yellow.png);
+    background: url(../images/wave-yellow-new.png);
+    content: "";
+    height: 44px;
+    position: absolute;
+    bottom: -44px;
+    left: 0;
+    background-repeat: repeat-x;
+    // background-color: blue;
+    @media screen and (min-width: 1400px) {
+      background-repeat: round;
+    }
+  }
   @media screen and (max-width: $break-large) {
     margin-top: 120px;
   }
   @media screen and (max-width: $phone) {
-    margin-top: 0;
+    margin-top: 50px;
   }
-  .waveDiv{
+  @media screen and (max-width: 750px) {
+    margin-top: 80px;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 50px;
+  }
+
+  .waveDiv {
     width: 100%;
   }
   .bgContainer {
@@ -22,14 +46,48 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+
+    &:before {
+      background: url(../images/wave-white.png);
+      content: "";
+      height: 45px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-repeat: repeat-x;
+      margin-top: -30px;
+      @media screen and (min-width: 1400px) {
+        background-repeat: round;
+      }
+    }
+
+    &:after {
+      width: 100%;
+      background: url(../images/wave-yellow.png);
+      content: "";
+      height: 44px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-repeat: repeat-x;
+      @media screen and (min-width: 1400px) {
+        background-repeat: round;
+      }
+    }
     @media screen and (max-width: $break-large) {
       height: 522px;
     }
 
     @media screen and (max-width: $phone) {
-      height: 322px;
+      height: 422px;
     }
-    
+
+    @media screen and (max-width: 500px) {
+      height: 372px;
+    }
+
     .stickerDiv {
       width: 406px;
       height: 406px;
@@ -39,6 +97,10 @@
       }
 
       @media screen and (max-width: $phone) {
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (max-width: 500px) {
         width: 150px;
         height: 150px;
       }
@@ -46,27 +108,27 @@
         width: 100%;
       }
     }
-  .before {  
-    height: 10px;
-    background-size: 20px 20px;
-    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ffd250 13px);
-    }
-  
-  .after {
-    height: 15px;
-    background-size: 40px 20px;
-    background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 12px);
-    }
+    // .before {
+    //   height: 10px;
+    //   background-size: 20px 20px;
+    //   background-image: radial-gradient(circle at 10px -5px, transparent 12px, #ffd250 13px);
+    //   }
+
+    // .after {
+    //   height: 15px;
+    //   background-size: 40px 20px;
+    //   background-image: radial-gradient(circle at 10px 15px, #ffd250 12px, transparent 12px);
+    //   }
   }
-  .before,
- .after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat-x;
-  }
+  //   .before,
+  //  .after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   background-repeat: repeat-x;
+  //   }
   .storyDiv {
     position: relative;
     display: flex;
@@ -74,19 +136,31 @@
     justify-content: space-around;
     height: 528px;
     background-color: #ffd250;
+    padding-top: 3%;
+    @media screen and (max-width: 1250px) {
+      padding-left: 5%;
+      padding-right: 5%;
+      
+    }
     @media screen and (max-width: $break-large) {
       flex-direction: column;
       padding-top: 10%;
+      align-items: center;
     }
-    &::before {
-      background-image: radial-gradient(circle at 10px -5px, transparent 13px, white 13px);
+    @media screen and (max-width: $phone) {
+      height: 328px;
     }
-  
-    &::after {  
-      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 12px);
-    }
-    span{
-      position:absolute; top:-180px;
+
+    // &::before {
+    //   background-image: radial-gradient(circle at 10px -5px, transparent 13px, white 13px);
+    // }
+
+    // &::after {
+    //   background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 12px);
+    // }
+    span {
+      position: absolute;
+      top: -180px;
     }
     .textDiv {
       width: 659px;
@@ -97,6 +171,7 @@
       letter-spacing: 0.53px;
       color: #000000;
       @media screen and (max-width: $break-large) {
+        text-align: center;
         width: 607px;
         height: 522px;
         font-size: 16.8px;
@@ -107,7 +182,6 @@
         width: 100%;
         font-size: 14px;
         padding: 0 5%;
-
       }
       .text1 {
         font-size: 34px;
@@ -122,18 +196,19 @@
         }
       }
     }
-    .chickenBoxDiv{
-      img{
+    .chickenBoxDiv {
+      img {
         width: 100%;
       }
       @media screen and (max-width: $break-large) {
-       width: 350px;
-       z-index: 9;
+        width: 350px;
+        z-index: 9;
       }
 
       @media screen and (max-width: $phone) {
-        width: 250px;
-       }
+        // width: 250px;
+        width: 40%;
+      }
     }
   }
 }

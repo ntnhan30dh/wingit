@@ -21,14 +21,16 @@ const Story = () => {
   ];
   return (
     <div className="storyContainer ">
-      <div className="bgContainer wave wave--top">
+      {/* <div className="bgContainer wave wave--top"> */}
+      <div className="bgContainer">
         <span className="before"></span>
         <span className="after"></span>
         <div className="stickerDiv">
           <img src={sticker} alt="sticker" />
         </div>
       </div>
-      <div className="storyDiv wave">
+      {/* <div className="storyDiv wave"> */}
+      <div className="storyDiv ">
         <span id="story" name="story"></span>
         <div className="textDiv">
           <p className="text1">

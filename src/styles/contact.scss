@@ -4,10 +4,25 @@
   background-color: #000000;
   text-align: center;
   position: relative;
-  padding-bottom: 3%;
-  @media screen and (max-width: $break-large) {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 5%;
+
+  &:before {
+    background: url(../images/wave-black.png);
+    content: "";
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: repeat-x;
+    margin-top: -30px;
+    // @media screen and (min-width: 1400px) {
+    //   background-repeat: round;
+    // }
+}
+  // @media screen and (max-width: $break-large) {
+  //   padding-bottom: 30px;
+  // }
   span {
     span {
       position: absolute;
@@ -25,21 +40,34 @@
     letter-spacing: 0.62px;
     text-align: center;
     color: #ffd250;
-    @media screen and (max-width: $break-large) {
-      padding-top: 70px;
-    }
+    // @media screen and (max-width: $break-large) {
+    //   padding-top: 70px;
+    // }
     @media screen and (max-width: $phone) {
       font-size: 20px;
+      padding-top: 5%;;
     }
   }
-  .logoDiv{
-    padding: 0 1%;
-    @media screen and (max-width: $phone) {
-      width: 50%;
-      margin: 0 auto;
-          img {
-            width: 100%;
-          }
+  .logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .logoDiv{
+      padding: 0 1%;
+      width:200px;
+      @media screen and (max-width: $break-large) {
+        width:150px;
+      }
+      @media screen and (max-width: $phone) {
+        width:100px;
+      }
+      img {
+        width: 100%;
+      }
+      // @media screen and (max-width: $phone) {
+      //   width: 50%;
+      //   margin: 0 auto;
+      // }
     }
   }
   .wave--top::before {
