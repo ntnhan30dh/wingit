@@ -29,7 +29,7 @@ const Story = (props) => {
   const parallaxMoveUp = [
     {
       start:'self',
-      duration: 300,
+      duration: 500,
       properties: [
         {
         startValue: 50,
