@@ -58,6 +58,9 @@
       @media screen and (max-width: $phone) {
         width: 90px;
       }
+      @media screen and (max-width: 500px) {
+        width: 50px;
+      }
       img {
         width: 100%;
       }

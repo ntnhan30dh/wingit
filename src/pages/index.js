@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../components/header"
 import Story from "../components/story"
 import Menu from "../components/menu"
@@ -9,10 +9,19 @@ import 'semantic-ui-css/semantic.min.css'
 import "../styles/index.scss"
 
 export default function Home() {
+  let [menuActive, setmenuActive] = useState(false);
+  const toggleMenu = () => {
+		setmenuActive(!menuActive)
+    }
+   
+    
   return (
     <div className="pageWrapper">
-    <Header/>
-    <Story/>
+      <head>
+      <title>Wing it!</title>
+      </head>
+    <Header toggleMenu={toggleMenu} menuState={menuActive}/>
+    <Story toggleMenu={toggleMenu} menuState={menuActive}/>
     <Menu/>
     <FollowUs/>
     <Contact/>

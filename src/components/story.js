@@ -1,26 +1,53 @@
 import React from "react"
 import sticker from "../images/Sticker.png"
-import chikenBox from "../images/chicken_box.png"
+// import chikenBox from "../images/chicken_box.png"
+
+import smell from '../images/Wingit_kos_smell.svg'
+import chicken from '../images/Wingit_kos_chicken.svg'
+import box from '../images/Wingit_kos.svg'
+
 
 import Plx from "react-plx"
 
 
-const Story = () => {
+const Story = (props) => {
+  let nudge = props.menuState ? 'nudge' : '';
   const parallaxData = [
     {
       start:'self',
-      duration: 500,
+      duration: 800,
       properties: [
+        {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity"
+        },
+      ],
+    },
+  ];
+
+  const parallaxMoveUp = [
+    {
+      start:'self',
+      duration: 300,
+      properties: [
+        {
+        startValue: 50,
+        endValue: 0,
+        property: "translateY"
+        },
         {
           startValue: 0.5,
           endValue: 1,
           property: "scale"
         },
+        
+        
       ],
     },
   ];
   return (
-    <div className="storyContainer ">
+    <section className={`storyContainer ${nudge}`}>
       {/* <div className="bgContainer wave wave--top"> */}
       <div className="bgContainer">
         <span className="before"></span>
@@ -43,11 +70,22 @@ const Story = () => {
             delivered right to your movie night.
           </p>
         </div>
-        <Plx parallaxData={parallaxData} className="chickenBoxDiv">
+        {/* <Plx parallaxData={parallaxMoveUp} className="chickenBoxDiv">
           <img src={chikenBox} alt="" />
-        </Plx>
+        </Plx> */}
+        <div  className="chickenBox">
+        <Plx parallaxData={parallaxData}>
+          <img src={smell} alt="" />
+          </Plx>
+          <Plx parallaxData={parallaxMoveUp}>
+          <img src={chicken} alt="" />
+          </Plx>
+          <div>
+          <img src={box} alt="" />
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

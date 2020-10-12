@@ -27,7 +27,7 @@ const FollowUs = () => {
   ];
   
   return (
-    <div className="followUsContainer">
+    <section className="followUsContainer">
       <span id="follow"></span>
       <div className="top">
         <div></div>
@@ -55,7 +55,7 @@ const FollowUs = () => {
         <div className="pic"><img src={soMe2} alt="Wing It_SoMe_2"/></div>
         <div className="pic"><img src={soMe3} alt="Wing It_SoMe_3"/></div>
       </div>
-    </div>
+    </section>
   )
 }
 

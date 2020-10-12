@@ -1,17 +1,24 @@
 import React from "react"
 import logo from "../images/WingIt_Logo.png"
-import OrderNow from './ordernow'
+import OrderNow from "./ordernow"
 import { Link } from "gatsby"
 
-
-const Header = () => {
- 
+const Header = props => {
+  let menuActive = props.menuState ? "is-inactive" : ""
+  let change = props.menuState ? "change" : ""
   return (
     <nav className="nav">
-      <Link  to="#" className="img_div">
-        <img src={logo} alt="logo" />
-      </Link>
-      <div className="rightDiv row">
+      <div className="leftDiv">
+        <Link to="#" className="img_div">
+          <img src={logo} alt="logo" />
+        </Link>
+        <div className={`burgerMenu  ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <div className={`rightDiv row ${menuActive}`}>
         <ul>
           <li></li>
           <li></li>
@@ -30,7 +37,7 @@ const Header = () => {
             {/* <AnchorLink to="#story" title="Our Story" /> */}
           </li>
         </ul>
-        <OrderNow/>
+        <OrderNow />
       </div>
     </nav>
   )

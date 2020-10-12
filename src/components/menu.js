@@ -15,6 +15,7 @@ import sides from "../images/sidesText.png"
 import dips from "../images/dipsText.png"
 import dip from "../images/dip.png"
 
+
 const Menu = () => {
   const parallaxRotate = [
     {
@@ -58,7 +59,7 @@ const Menu = () => {
     },
   ];
   return (
-    <div className="menuContainer">
+    <section className="menuContainer">
     <span id="menu"  name="menu"></span>
       <div className="textTopDiv row ">
         <div className="chickenWingDiv">
@@ -162,7 +163,7 @@ const Menu = () => {
           <img src={chickenBoxIcon} alt="chicken box icon" />
         </Plx>
 \      </div>
-    </div>
+    </section>
   )
 }
 

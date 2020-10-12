@@ -5,13 +5,16 @@
     top: -180px;
   }
   .textTopDiv {
-    padding: 5% 0;
+    padding: 10% 0;
     @media screen and (max-width: $break-large) {
-      padding: 10% 0;
+      padding: 15% 0;
+    }
+    @media screen and (max-width: $phone) {
+      padding: 25% 0;
     }
 
     @media screen and (max-width: 350px) {
-      padding: 18% 0;
+      padding: 28% 0;
     }
     
     .chickenWingDiv {

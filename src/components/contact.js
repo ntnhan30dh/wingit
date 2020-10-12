@@ -7,7 +7,7 @@ import damejidlo from "../images/damejidlo.png"
 
 const Contact = () => {
   return (
-    <div className="contactContainer">
+    <section className="contactContainer">
       <span id="contact"></span>
       {/* <div className="text wave wave--top">hello@getwingit.com</div> */}
       <div className="text">hello@getwingit.com</div>
@@ -28,7 +28,7 @@ const Contact = () => {
           <img src={damejidlo} alt="logo" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
