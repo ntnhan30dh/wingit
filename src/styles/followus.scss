@@ -58,8 +58,8 @@
       @media screen and (max-width: $phone) {
         width: 90px;
       }
-      @media screen and (max-width: 500px) {
-        width: 50px;
+      @media screen and (max-width: 600px) {
+        display: none;
       }
       img {
         width: 100%;
@@ -85,6 +85,6 @@
   }
   span {
     position: absolute;
-    top: -180px;
+    top: -140px;
   }
 }
