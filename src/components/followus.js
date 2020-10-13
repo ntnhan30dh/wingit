@@ -18,7 +18,7 @@ const FollowUs = () => {
       duration: 1000,
       properties: [
         {
-        startValue: -100,
+        startValue: -200,
         endValue: 0,
         property: "translateX"
         },
