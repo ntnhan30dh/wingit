@@ -36,7 +36,8 @@
     width: 100%;
   }
   .bgContainer {
-    height: 815px;
+    // height: 815px;
+    height: 715px;
     width: 100%;
     // background-image: url(../images/bgBig.png);
     background-image: url(../images/bgBig-2-1.png);
@@ -89,8 +90,10 @@
     }
 
     .stickerDiv {
-      width: 406px;
-      height: 406px;
+      // width: 406px;
+      // height: 406px;
+      width: 380px;
+      height: 380px;
       @media screen and (max-width: $break-large) {
         width: 350px;
         height: 350px;
@@ -135,7 +138,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 528px;
+    //height: 528px;
+    height: 428px;
     background-color: #ffd250;
     padding: 5% 10% 0 10%;
     // border: 1px solid pink;
@@ -168,7 +172,8 @@
       width: 659px;
       height: 428px;
       font-family: Montserrat;
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 20px;
       line-height: 1.42;
       letter-spacing: 0.53px;
       color: #000000;
@@ -189,7 +194,8 @@
         padding: 0 5%;
       }
       .text1 {
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 30px;
         font-weight: 800;
         letter-spacing: 0.75px;
         @media screen and (max-width: $break-large) {
@@ -216,7 +222,7 @@
     //   }
     // }
     .chickenBox {
-      width: 40%;
+      width: 30%;
       // max-width: 100%;
       // margin-bottom: -250px;
       z-index: 2;
@@ -242,7 +248,7 @@
         width: 100%;
         height: 100%;
         // border: black 1px solid;
-        margin-top: -15%;
+        margin-top: -25%;
         @media screen and (max-width: 1350px) {
           margin-top: -5%;
         }

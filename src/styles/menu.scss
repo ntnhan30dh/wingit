@@ -21,9 +21,10 @@
       width: 33%;
       position: relative;
       .chickenWingImgDiv {
+        width: 80px;
         position: absolute;
         top: 40%;
-        left: 40%;
+        left: 60%;
         img{
           width: 100%;
         }
@@ -41,9 +42,10 @@
       width: 33%;
       position: relative;
       .chickenLegImgDiv {
+        width: 80px;
         position: absolute;
         top: 10%;
-        left: 40%;
+        left: 20%;
         img{
           width: 100%;
         }
@@ -87,7 +89,6 @@
         letter-spacing: 0.53px;
         text-align: center;
         color: #000000;
-        font-size: 28px;
         font-weight: 800;
         letter-spacing: 0.62px;
         width: 100%;
@@ -97,7 +98,8 @@
       }
       p {
         font-family: Montserrat;
-        font-size: 24px;
+        // font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -149,6 +151,10 @@
     // margin-bottom: 5%;
     margin: 0 10% 5% 10%;
     justify-content: center;
+    padding:0 10%;
+    @media screen and (max-width: 1400px) {
+      padding:0;
+      }
     @media screen and (max-width: $break-large) {
       display: flex;
       flex-direction: column;
@@ -196,10 +202,18 @@
           flex-direction: column;
           margin-left: 0;
         }
+
+        .mainsPicDiv{
+         margin-bottom: 20px;
+         @media screen and (max-width: $phone) {
+          margin-bottom: 0;
+        }
+        }
         p {
           width: 100%;
           font-family: Montserrat;
-          font-size: 22px;
+          // font-size: 22px;
+          font-size: 20px;
           font-weight: 600;
           line-height: 1.82;
           letter-spacing: 0.48px;
@@ -217,15 +231,16 @@
     }
     .chickenDishDiv {
       position: absolute;
-      top: -90px;
+      top: -80px;
       right: -60px;
+      width: 130px;
+
       img{
         width: 100%;
       }
       @media screen and (max-width: $break-large) {
         // margin-left: 90%;
         // margin-top: -5%;;
-        position: absolute;
       }
       @media screen and (max-width: $phone) {
         width: 120px;
@@ -243,6 +258,8 @@
       position: absolute;
       top: -50px;
       left: -30px;
+      width: 70px;
+
       img{
         width: 100%;
       }
@@ -263,6 +280,7 @@
       position: absolute;
       top: -60px;
       right: -60px;
+      width: 120px;
 
       img{
         width: 100%;
@@ -293,7 +311,8 @@
     p {
       margin: 0 25%;
       font-family: Montserrat;
-      font-size: 28px;
+      // font-size: 28px;
+      font-size: 24px;
       font-weight: 800;
       font-stretch: normal;
       font-style: normal;
@@ -304,11 +323,14 @@
     }
 
     button {
-      width: 224px;
-      height: 67px;
+      // width: 224px;
+      // height: 67px;
+      width: 200px;
+      height: 60px;
       background-color: #000000;
       font-family: Montserrat;
-      font-size: 22px;
+      // font-size: 22px;
+      font-size: 20px;
       font-weight: 800;
       font-stretch: normal;
       font-style: normal;
@@ -332,7 +354,8 @@
   }
   .bgSmallDiv {
     width: 100%;
-    height: 352px;
+    // height: 352px;
+    height: 300px;
     background-image: url(../images/bgSmall.png);
     background-size: cover;
     background-position: center;

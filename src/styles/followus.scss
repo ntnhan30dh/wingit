@@ -16,7 +16,7 @@
     display: flex;
     position: relative;
     .followUSPicDiv {
-      padding:0 1%;
+      padding:0 5%;
       img {
         width: 100%;
       }
@@ -35,8 +35,10 @@
       }
       & > div {
         margin: 10% 5%;
-        width: 55px;
-        height: 55px;
+        // width: 55px;
+        // height: 55px;
+        width: 40px;
+        height: 40px;
         @media screen and (max-width: $phone) {
           width: 40px;
           height: 40px;
@@ -69,6 +71,10 @@
   .bottom {
     display: flex;
     width: 100%;
+    padding: 0 10%;
+    @media screen and (max-width: $phone) {
+      padding: 0 ;
+    }
     justify-content: space-between;
     & > div {
        width: 30%;

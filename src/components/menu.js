@@ -88,7 +88,7 @@ const Menu = () => {
         </div>
         <div   className="mainText">
           <div className="textContainer">
-          <div className="">
+          <div className="mainsPicDiv">
             <img src={mains} alt="mains" />
           </div>
           <p>
