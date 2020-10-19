@@ -1,10 +1,12 @@
 import React from "react"
 import Plx from "react-plx"
+import { graphql, useStaticQuery } from 'gatsby'
+
 
 import OrderNow from './ordernow'
-import mainPic from "../images/mains-pic.png"
-import sidesPic from "../images/sides-pic.png"
-import dipPic from "../images/dip-pic.png"
+// import mainPic from "../images/mains-pic.png"
+// import sidesPic from "../images/sides-pic.png"
+// import dipPic from "../images/dip-pic.png"
 import chickenWing from "../images/chicken-wing.png"
 import chickenLeg from "../images/chicken-leg.png"
 import chickenDish from "../images/chicken-dish.png"
@@ -58,6 +60,33 @@ const Menu = () => {
       ],
     },
   ];
+
+  const data = useStaticQuery(graphql`
+  {
+    mains: file(relativePath: { eq: "mains-pic.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    sides: file(relativePath: { eq: "sides-pic.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    dip: file(relativePath: { eq: "dip-pic.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+  }
+`)
   return (
     <section className="menuContainer">
     <span id="menu"  name="menu"></span>
@@ -84,7 +113,10 @@ const Menu = () => {
       </div>
       <div className="mainDiv row">
         <div className="mainDivImgContainer">
-          <img src={mainPic} alt="main menu" />
+          <img src={data.mains.childImageSharp.fluid.src} alt="main menu" />
+          {/* <Img
+              fluid={data.mains.childImageSharp.fluid}
+            /> */}
         </div>
         <div   className="mainText">
           <div className="textContainer">
@@ -124,12 +156,12 @@ const Menu = () => {
           </div>
         </div>
         <div className="mainDivImgContainer">
-          <img src={sidesPic} alt="sides menu" />
+          <img src={data.sides.childImageSharp.fluid.src} alt="sides menu" />
         </div>
       </div>
       <div className="mainDiv row">
         <div className="mainDivImgContainer">
-          <img src={dipPic} alt="dips menu" />
+          <img src={data.dip.childImageSharp.fluid.src} alt="dips menu" />
         </div>
         <div className="mainText">
           <div className="textContainer">

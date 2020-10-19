@@ -243,8 +243,9 @@
       @media screen and (max-width: $phone) {
         min-width: 50%;
       }
+
       div {
-        position: absolute;
+        position: absolute !important;
         top: 0;
         left: 0;
         width: 100%;

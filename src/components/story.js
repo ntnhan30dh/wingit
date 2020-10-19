@@ -1,5 +1,7 @@
 import React from "react"
-import sticker from "../images/Sticker.png"
+import Img from "gatsby-image"
+
+// import sticker from "../images/Sticker.png"
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 
@@ -54,7 +56,14 @@ const Story = (props) => {
     {
       bgBig: file(relativePath: { eq: "bgBig-2-1.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxHeight: 215) {
+          fluid(quality: 90, maxWidth: 1500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      logo: file(relativePath: { eq: "Sticker.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 380) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -65,26 +74,25 @@ const Story = (props) => {
   const imageData = data.bgBig.childImageSharp.fluid
   return (
     <section className={`storyContainer ${nudge}`}>
-      {/* <div className="bgContainer wave wave--top"> */}
-      {/* <BackgroundImage
-          Tag="section"
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-          className="bgContainer"
-        >
-        </BackgroundImage> */}
       <BackgroundImage  Tag="section"
           fluid={imageData}
           backgroundColor={`#040e18`}
           className="bgContainer">
         <span className="before"></span>
         <span className="after"></span>
-        <div className="stickerDiv">
+        {/* <div className="stickerDiv">
           <img src={sticker} alt="sticker" />
-        </div>
+        </div> */}
+        <Img
+              className={"stickerDiv"}
+              fluid={data.logo.childImageSharp.fluid}
+            />
       </BackgroundImage>
       {/* <div className="storyDiv wave"> */}
       <div className="storyDiv ">
+      <Img
+              fluid={data.logo.childImageSharp.fluid}
+            />
         <span id="story" name="story"></span>
         <div className="textDiv">
           <p className="text1">
@@ -100,6 +108,7 @@ const Story = (props) => {
         {/* <Plx parallaxData={parallaxMoveUp} className="chickenBoxDiv">
           <img src={chikenBox} alt="" />
         </Plx> */}
+          
         <div  className="chickenBox">
         <Plx parallaxData={parallaxData}>
           <img src={smell} alt="" />
