@@ -77,12 +77,12 @@ const FollowUs = () => {
       <div className="bottom">
         <div className="pic">
           {/* <img src={soMe1} alt="Wing It_SoMe_1"/> */}
-          <Img fluid={data.soMe1.childImageSharp.fluid} />
+          <Img fluid={data.soMe2.childImageSharp.fluid} />
         </div>
         <div className="pic">
           {/* <img src={soMe2} alt="Wing It_SoMe_2" /> */}
           <Img
-              fluid={data.soMe2.childImageSharp.fluid}
+              fluid={data.soMe1.childImageSharp.fluid}
             />
         </div>
         <div className="pic">

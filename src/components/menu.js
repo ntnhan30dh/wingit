@@ -169,7 +169,7 @@ const Menu = () => {
             <img src={dips} alt="dips" />
           </div>
           <p>
-            Black Pepper <br />
+            Black pepper <br />
             Garlic <br />
             Paprika <br />
             Bernaise <br />
@@ -185,7 +185,7 @@ const Menu = () => {
       </div>
       <div className="textBottomDiv">
         <p>
-          Make your fried chicken dreams come true. Pick your favourite dish and
+          Make your fried chicken dreams come true. Pick your favourite dish now and
           enjoy!
         </p>
         <OrderNow/>
