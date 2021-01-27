@@ -145,7 +145,7 @@ const Menu = () => {
             <img src={sides} alt="sides" />
           </div>
           <p>
-            Criss cross potato <br />
+            Criss cross potatoes <br />
             Onion rings <br />
             Cheese nuggets <br />
             Mozzarella sticks <br />
