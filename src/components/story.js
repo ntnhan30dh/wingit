@@ -96,13 +96,11 @@ const Story = (props) => {
         <span id="story" name="story"></span>
         <div className="textDiv">
           <p className="text1">
-            Nothing fits a night in with friends better than some succulent
-            fried chicken. And no one makes it better than Wing it!
+          Nothing fits a night in tuning into Netflix or hanging out with friends better than succulent fried chicken - and no one makes it better than Wing it!
+
           </p>
           <p className="text2">
-            Crispy chicken wings, juicy strips, paired with delicious dips and
-            original sides like criss cut fries. The perfect comfort food,
-            delivered right to your movie night.
+          We're experts at crispy chicken wings & juicy strips, paired with delicious dips and original sides like criss cut fries. The perfect comfort food, delivered right to your movie night.
           </p>
         </div>
         {/* <Plx parallaxData={parallaxMoveUp} className="chickenBoxDiv">

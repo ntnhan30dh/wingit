@@ -10,7 +10,7 @@ const Contact = () => {
     <section className="contactContainer">
       <span id="contact"></span>
       {/* <div className="text wave wave--top">hello@getwingit.com</div> */}
-      <div className="text">hello@getwingit.com</div>
+      <div className="text">Wing It! your way, exclusively from:</div>
       <div className="logos">
         <div className="logoDiv">
           <img src={pedidosYa} alt="logo" />
@@ -27,6 +27,14 @@ const Contact = () => {
         <div className="logoDiv">
           <img src={damejidlo} alt="logo" />
         </div>
+      </div>
+      <div className="blackDiv">
+        <ul>
+          <li>Impressum</li>
+          <li>Privacy Policy</li>
+          <li>Disclaimer</li>
+          <li>Terms & conditions</li>
+        </ul>
       </div>
     </section>
   )

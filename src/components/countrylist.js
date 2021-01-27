@@ -16,6 +16,9 @@ const countryOptions = [
   { key: 'do', value: 'do', flag: 'do', text: 'Dominican Republic', as: 'a', href:'https://www.pedidosya.com.do' },
 ]
 const CountryList = () => {
+  const action = (e, { value }) =>{
+    console.log ("value", value)
+  }
   return (
       <Dropdown
     placeholder='Select Country'
@@ -23,6 +26,7 @@ const CountryList = () => {
     search
     selection
     options={countryOptions}
+    onChange = {action}
   />
   )
 }
