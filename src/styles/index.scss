@@ -88,3 +88,17 @@ html, body {
 //   padding: 1em;
 // }
 
+.legalInfo-div{
+  width: 60%;
+  margin: 200px auto;
+  padding-bottom: 5%;
+  min-height: 70vh;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
+  
+    li {
+      // font-family: "Roboto", sans-serif;
+    }
+  
+}

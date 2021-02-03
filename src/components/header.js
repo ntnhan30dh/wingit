@@ -9,7 +9,7 @@ const Header = props => {
   return (
     <nav className="nav">
       <div className="leftDiv">
-        <Link to="#" className="img_div">
+        <Link to="/" className="img_div">
           <img src={logo} alt="logo" />
         </Link>
         <div className={`burgerMenu  ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
@@ -23,16 +23,16 @@ const Header = props => {
           <li></li>
           <li></li>
           <li>
-            <Link to="#story">Our Story</Link>
+            <Link to="/#story">Our Story</Link>
           </li>
           <li>
-            <Link to="#menu">Menu</Link>
+            <Link to="/#menu">Menu</Link>
           </li>
           <li>
-            <Link to="#follow">Follow Us</Link>
+            <Link to="/#follow">Follow Us</Link>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <Link to="/#contact">Contact</Link>
 
             {/* <AnchorLink to="#story" title="Our Story" /> */}
           </li>

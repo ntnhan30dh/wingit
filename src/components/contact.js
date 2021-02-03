@@ -4,6 +4,7 @@ import foodora from "../images/foodora.png"
 import mjam from "../images/mjam.png"
 import netpincer from "../images/netpincer.png"
 import damejidlo from "../images/damejidlo.png"
+import { Link } from "gatsby"
 
 const Contact = () => {
   return (
@@ -29,11 +30,16 @@ const Contact = () => {
         </div>
       </div>
       <div className="blackDiv">
-        <ul>
-          <li>Impressum</li>
-          <li>Privacy Policy</li>
-          <li>Disclaimer</li>
-          <li>Terms & conditions</li>
+      <ul>
+          <li>
+            <Link to="/imprint">Imprint</Link>
+            </li>
+            <li>
+            <Link to="/privacy">Privacy Policy </Link>
+            </li>
+            <li>
+            <Link to="/disclaimer">Disclaimer</Link>
+            </li>
         </ul>
       </div>
     </section>
