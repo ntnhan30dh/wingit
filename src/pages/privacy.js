@@ -36,7 +36,7 @@ export default function Home() {
         </p>
         <p>
           All information will be processed by the Data Controller: <br />
-          Wing It! Delivery Hero SE <br />
+          Delivery Hero SE <br />
           Oranienburger Straße 70 <br />
           10117 Berlin <br />
           If you require additional information or have any concerns about the
